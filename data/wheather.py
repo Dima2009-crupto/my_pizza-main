@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-def get_wheater(city : str ="Dnipro"):
+def get_wheather(city : str ="Dnipro"):
     api_key = os.getenv("WHEATER_API")
     url = f"http://api.weatherapi.com/v1/current.json?key={api_key}&g={city}"
     wheater = requests.get(url).json()

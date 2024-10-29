@@ -15,7 +15,7 @@ def index():
 
     if 26 > wheather.get("temp") > 10:
         pizza_name = "Тепла"
-    elif wheather.get("temp") <= 10:
+    elif wheather.get("temep") <= 10:
         pizza_name = "Холодна"
     elif wheather.get("temp") > 26:
         pizza_name = "Пепероні"
