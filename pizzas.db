@@ -1,0 +1,5 @@
+SQLite format 3
+    name TEXT NOT NULL,
+    ingredients TEXT,
+    price REAL
+)
