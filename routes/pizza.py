@@ -3,7 +3,7 @@ from flask import Blueprint, render_template, request, redirect
 from models.base import Session
 from models.pizza import Pizza
 from models.ingredient import Ingredient
-from data.wheather import get_wheather
+from data.wheater import get_wheather
 
 
 pizza_route = Blueprint("pizzas", __name__)
@@ -11,7 +11,8 @@ pizza_route = Blueprint("pizzas", __name__)
 
 @pizza_route.get("/")
 def index():
-    wheather = get_wheather("Neratovice")
+    wheather = get_wheather()
+    
 
     if 26 > wheather.get("temp") > 10:
         pizza_name = "Тепла"
